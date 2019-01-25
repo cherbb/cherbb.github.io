@@ -135,7 +135,6 @@ body {
 
 .article {
   padding: 30px;
-  clear: both;
   font-size: 16px;
   line-height: 24px;
 }
@@ -185,11 +184,7 @@ p.history {
   margin-bottom: 40px;
 }
 
-.img-text {
-  text-align: right;
-  float: right
-}
-  
+
 .img-big img {
   border-radius: 15px;
   padding: 10px;
@@ -198,12 +193,30 @@ p.history {
   background-color: antiquewhite
 }
 
+.img-text {
+  text-align: center;
+  position: relative;
+}
+
+.img-text span {
+  position: absolute;
+  left: 43%;
+  bottom: 40px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: Pacifico, serif;
+}
+
 .img-text img {
-    border-radius: 15px;
-    padding: 0px;
-    border: rgba(0, 0, 0, 0.15) 1px solid;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 6px 0px;
-    background-color: antiquewhite
+    width: 220px;
+    height: 220px;
+    border: 130px solid teal;
+    border-image-source: url(../img/frame.png);
+    border-image-repeat: round;
+    border-image-slice: 164 fill;
+    border-radius: 50%;
+
+    margin-bottom: 50px;
 }
 
 .img-title {
